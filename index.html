@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop-project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -26,13 +25,31 @@
                     <nav>
                         <ul class="menu">
                         <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
+                        <li class="dropdown"><a href="">Products<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-content">
+                                <li><a href="">Lorem ipsum dolor</a></li>
+                                <li><a href="">Sit amet</a></li>
+                                <li><a href="">Consectetur adipisicing</a></li>
+                                <li><a href="">Tempor incididunt</a></li>
+                                <li><a href="">Dolore magna aliqua</a></li>
+                                <li><a href="">Ut enim ad minim veniam</a></li>
+                                <li><a href="">Quis nostrud</a></li>
+                            </ul>
+                        </li>
                         <li><a href="">Shipping</a></li>
                         <li><a href="">Payments</a></li>
                     </ul>
                     </nav>
                 </div>
-                <div class="col-3">search</div>
+                <div class="col-3">
+                    <div class="search">
+                        <input type="search" placeholder="search">
+                            <button class="submit">
+                                <img src="images/search.png" alt="">
+                            </button>
+                            <div><button class="basket"><img src="images/basket.png" alt=""><span>4</span></button></div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
